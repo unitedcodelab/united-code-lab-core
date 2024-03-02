@@ -1,0 +1,10 @@
+[package]
+name = "package"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+clap = "4.5.1"
+
+[features]
+default = ["clap/cargo"]
