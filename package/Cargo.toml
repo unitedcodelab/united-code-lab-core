@@ -5,6 +5,11 @@ edition = "2021"
 
 [dependencies]
 clap = "4.5.1"
+cargo-deb = "2.0.6"
 
 [features]
 default = ["clap/cargo"]
+
+[package.metadata.deb]
+maintainer = "United Code Lab <https://github.com/unitedcodelab>"
+copyright = "2024, 2024 <https://github.com/unitedcodelab>"

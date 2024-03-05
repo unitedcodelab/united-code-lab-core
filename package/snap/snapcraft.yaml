@@ -1,0 +1,24 @@
+name: ucl
+version: 0.0.1
+summary: A handler for ucl projects
+description: |
+  United code lab is a collaborative
+  forum made by unit students, and each
+  project has a different way to run,
+  so the ucl cli:
+  - Unify all ways to run a project.
+  - Is useful to see many different projects
+    using the same command.
+
+base: core22
+confinement: devmode
+
+
+parts:
+  ucl:
+    plugin: rust
+    source: .
+
+apps:
+  ucl:
+    command: bin/package

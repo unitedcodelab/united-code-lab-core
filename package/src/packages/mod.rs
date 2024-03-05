@@ -1,5 +1,5 @@
 pub mod sanic;
-use clap::{arg, command, Command};
+use clap::{command, Command};
 
 pub fn load() {
     let matches = command!()
